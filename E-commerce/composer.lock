@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "25dbda348993cfe655a61be055267fb6",
+    "content-hash": "e712ff207e55d1c4c7cdebe9e7531ff6",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1609,22 +1609,22 @@
         },
         {
             "name": "friendsofphp/proxy-manager-lts",
-            "version": "v1.0.15",
+            "version": "v1.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/proxy-manager-lts.git",
-                "reference": "3ca65b8edb8d96b46fedc9bb4911396516347129"
+                "reference": "ecadbdc9052e4ad08c60c8a02268712e50427f7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/proxy-manager-lts/zipball/3ca65b8edb8d96b46fedc9bb4911396516347129",
-                "reference": "3ca65b8edb8d96b46fedc9bb4911396516347129",
+                "url": "https://api.github.com/repos/FriendsOfPHP/proxy-manager-lts/zipball/ecadbdc9052e4ad08c60c8a02268712e50427f7c",
+                "reference": "ecadbdc9052e4ad08c60c8a02268712e50427f7c",
                 "shasum": ""
             },
             "require": {
                 "laminas/laminas-code": "~3.4.1|^4.0",
                 "php": ">=7.1",
-                "symfony/filesystem": "^4.4.17|^5.0|^6.0"
+                "symfony/filesystem": "^4.4.17|^5.0|^6.0|^7.0"
             },
             "conflict": {
                 "laminas/laminas-stdlib": "<3.2.1",
@@ -1635,7 +1635,7 @@
             },
             "require-dev": {
                 "ext-phar": "*",
-                "symfony/phpunit-bridge": "^5.4|^6.0"
+                "symfony/phpunit-bridge": "^5.4|^6.0|^7.0"
             },
             "type": "library",
             "extra": {
@@ -1675,7 +1675,7 @@
             ],
             "support": {
                 "issues": "https://github.com/FriendsOfPHP/proxy-manager-lts/issues",
-                "source": "https://github.com/FriendsOfPHP/proxy-manager-lts/tree/v1.0.15"
+                "source": "https://github.com/FriendsOfPHP/proxy-manager-lts/tree/v1.0.16"
             },
             "funding": [
                 {
@@ -1687,7 +1687,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-05-16T13:18:04+00:00"
+            "time": "2023-05-24T07:17:17+00:00"
         },
         {
             "name": "jms/metadata",
@@ -8329,35 +8329,34 @@
         },
         {
             "name": "vich/uploader-bundle",
-            "version": "1.23.1",
+            "version": "1.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dustin10/VichUploaderBundle.git",
-                "reference": "7d20347fc92243ab8e261c0b6196c25b77c579f8"
+                "reference": "94ba188f2603fad9bf9d2a88c61444f5e52a11df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/7d20347fc92243ab8e261c0b6196c25b77c579f8",
-                "reference": "7d20347fc92243ab8e261c0b6196c25b77c579f8",
+                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/94ba188f2603fad9bf9d2a88c61444f5e52a11df",
+                "reference": "94ba188f2603fad9bf9d2a88c61444f5e52a11df",
                 "shasum": ""
             },
             "require": {
-                "doctrine/persistence": "^1.3 || ^2 || ^3",
                 "ext-simplexml": "*",
-                "jms/metadata": "^1.7 || ^2.4",
+                "jms/metadata": "^2.4",
                 "php": "^7.3 || ^8.0",
-                "symfony/config": "^4.4 || ^5.0 || ^6.0",
-                "symfony/console": "^4.4 || ^5.0 || ^6.0",
-                "symfony/dependency-injection": "^4.4 || ^5.0 || ^6.0",
-                "symfony/event-dispatcher-contracts": "^1.1 || ^2.0 || ^3.0",
-                "symfony/http-foundation": "^4.4 || ^5.0 || ^6.0",
-                "symfony/http-kernel": "^4.4 || ^5.0 || ^6.0",
-                "symfony/mime": "^4.4 || ^5.0 || ^6.0",
-                "symfony/property-access": "^4.4 || ^5.0 || ^6.0",
-                "symfony/string": "^5.0 || ^6.0"
+                "symfony/config": "^4.4 || ^5.0",
+                "symfony/console": "^4.4 || ^5.0",
+                "symfony/dependency-injection": "^4.4 || ^5.0",
+                "symfony/event-dispatcher-contracts": "^1.1 || ^2.0",
+                "symfony/form": "^4.4 || ^5.0",
+                "symfony/http-foundation": "^4.4 || ^5.0",
+                "symfony/http-kernel": "^4.4 || ^5.0",
+                "symfony/mime": "^4.4 || ^5.0",
+                "symfony/property-access": "^4.4 || ^5.0",
+                "symfony/string": "^5.0"
             },
             "conflict": {
-                "doctrine/annotations": "<1.12",
                 "league/flysystem": "<2.0"
             },
             "require-dev": {
@@ -8366,27 +8365,26 @@
                 "doctrine/mongodb-odm": "^1.2 || ^2.0",
                 "doctrine/orm": "^2.7",
                 "ext-sqlite3": "*",
-                "knplabs/knp-gaufrette-bundle": "dev-master",
+                "knplabs/knp-gaufrette-bundle": "^0.7",
                 "league/flysystem-bundle": "^2.0",
                 "league/flysystem-memory": "^2.0",
                 "matthiasnoback/symfony-dependency-injection-test": "^4.1",
-                "mikey179/vfsstream": "^1.6.8",
+                "mikey179/vfsstream": "^1.6",
                 "phpunit/phpunit": "^9.5",
-                "symfony/asset": "^4.4 || ^5.0 || ^6.0",
-                "symfony/browser-kit": "^4.4 || ^5.0 || ^6.0",
-                "symfony/css-selector": "^4.4 || ^5.0 || ^6.0",
-                "symfony/doctrine-bridge": "^4.4 || ^5.0 || ^6.0",
-                "symfony/dom-crawler": "^4.4 || ^5.0 || ^6.0",
-                "symfony/form": "^4.4 || ^5.0 || ^6.0",
-                "symfony/framework-bundle": "^4.4 || ^5.0 || ^6.0",
-                "symfony/phpunit-bridge": "^6.0",
-                "symfony/security-csrf": "^4.4 || ^5.0 || ^6.0",
-                "symfony/translation": "^4.4 || ^5.0 || ^6.0",
-                "symfony/twig-bridge": "^4.4 || ^5.0 || ^6.0",
-                "symfony/twig-bundle": "^4.4 || ^5.0 || ^6.0",
-                "symfony/validator": "^4.4 || ^5.0 || ^6.0",
-                "symfony/var-dumper": "^4.4 || ^5.0 || ^6.0",
-                "symfony/yaml": "^4.4 || ^5.0 || ^6.0"
+                "symfony/asset": "^4.4 || ^5.0",
+                "symfony/browser-kit": "^4.4 || ^5.0",
+                "symfony/css-selector": "^4.4 || ^5.0",
+                "symfony/doctrine-bridge": "^4.4 || ^5.0",
+                "symfony/dom-crawler": "^4.4 || ^5.0",
+                "symfony/framework-bundle": "^4.4 || ^5.0",
+                "symfony/phpunit-bridge": "^5.2",
+                "symfony/security-csrf": "^4.4 || ^5.0",
+                "symfony/translation": "^4.4 || ^5.0",
+                "symfony/twig-bridge": "^4.4 || ^5.0",
+                "symfony/twig-bundle": "^4.4 || ^5.0",
+                "symfony/validator": "^4.4 || ^5.0",
+                "symfony/var-dumper": "^4.4 || ^5.0",
+                "symfony/yaml": "^4.4 || ^5.0"
             },
             "suggest": {
                 "doctrine/doctrine-bundle": "For integration with Doctrine",
@@ -8399,7 +8397,6 @@
                 "ocramius/proxy-manager": "To use lazy services",
                 "oneup/flysystem-bundle": "For integration with Flysystem",
                 "symfony/asset": "To generate better links",
-                "symfony/form": "To handle uploads in forms",
                 "symfony/yaml": "To use YAML mapping"
             },
             "type": "symfony-bundle",
@@ -8431,9 +8428,9 @@
             ],
             "support": {
                 "issues": "https://github.com/dustin10/VichUploaderBundle/issues",
-                "source": "https://github.com/dustin10/VichUploaderBundle/tree/1.23.1"
+                "source": "https://github.com/dustin10/VichUploaderBundle/tree/1.17.1"
             },
-            "time": "2023-04-14T09:05:19+00:00"
+            "time": "2021-04-19T07:57:49+00:00"
         },
         {
             "name": "webmozart/assert",
