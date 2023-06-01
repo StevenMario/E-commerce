@@ -17,9 +17,11 @@ use App\Repository\ProduitRepository;
 class ProductController extends AbstractController
 {
     private $entityManager;
-    public function __construct(EntityManagerInterface $entityManager)
+    private $produitRepository;
+    public function __construct(EntityManagerInterface $entityManager, ProduitRepository $produitRepository)
     {
         $this->entityManager = $entityManager;
+        $this->produitRepository = $produitRepository;
     }
     /**
      * @Route("/nos_produit", name="app_product")
@@ -33,7 +35,7 @@ class ProductController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()){
-            $products = $this->entityManager->getRepository(Produit::class)->findWithSearch($search);
+            $products = $this->produitRepository->findWithSearch($search);
         }else{
             $products = $this->entityManager->getRepository(Produit::class)->findAll();
         }
